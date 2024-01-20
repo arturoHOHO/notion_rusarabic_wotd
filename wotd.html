@@ -1,0 +1,14 @@
+<div id="current_date"><p></p>
+<script>
+date = new Date();
+year = date.getFullYear();
+month = date.getMonth() + 1;
+day = date.getDate();
+
+if(month<10)
+     { window.open("https://wotd.transparent.com/widget/?lang=russian&date=" + "0" + month + "-" + day + "-" + year, "_self"); }
+else { window.open("https://wotd.transparent.com/widget/?lang=russian&date=" + month + "-" + day + "-" + year, "_self"); }
+
+</script>
+
+</div>
