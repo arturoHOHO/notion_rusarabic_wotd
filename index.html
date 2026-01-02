@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
      <body>
-          <div style="height:900px;" id="current_date_ru"></div>
+          <div style="height:700px;" id="current_date_ru"></div>
           <script>
             date = new Date();
             year = date.getFullYear();
@@ -12,11 +12,11 @@
 
             if(month<10)
                 {
-                    current_date_ru.innerHTML = '<object style="height:900px;" width="100%" type="text/html" data="https://wotd.transparent.com/widget/?lang=russian&date=" + "0" + month + "-" + day + "-" + year, "_self"</object>';
+                    current_date_ru.innerHTML = '<object style="height:700px;" width="100%" type="text/html" data="https://wotd.transparent.com/widget/?lang=russian&date=" + "0" + month + "-" + day + "-" + year, "_self"</object>';
                 }
             else
                 {
-                    current_date_ru.innerHTML = '<object style="height:900px;" width="100%" type="text/html" data="https://wotd.transparent.com/widget/?lang=russian&date=" + month + "-" + day + "-" + year, "_self"</object>';
+                    current_date_ru.innerHTML = '<object style="height:700px;" width="100%" type="text/html" data="https://wotd.transparent.com/widget/?lang=russian&date=" + month + "-" + day + "-" + year, "_self"</object>';
                 }
             </script>
      </body>
