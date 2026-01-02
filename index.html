@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
      <body>
-          <div style="height:175px;" id="current_date_ru"></div>
-          <div style="height:175px;" id="current_date_arabic"></div>
+          <div style="height:400px;" id="current_date_ru"></div>
           <script>
             date = new Date();
             year = date.getFullYear();
@@ -10,17 +9,14 @@
             day = date.getDate();
             
             const current_date_ru = document.getElementById('current_date_ru');
-            const current_date_arabic = document.getElementById('current_date_arabic');
-            
+
             if(month<10)
                 {
-                    current_date_ru.innerHTML = '<object style="height:175px;" width="100%" type="text/html" data="https://wotd.transparent.com/widget/?lang=russian&date=" + "0" + month + "-" + day + "-" + year, "_self"</object>';
-                    current_date_arabic.innerHTML = '<object style="height:175px;" width="100%" type="text/html" data="https://wotd.transparent.com/widget/?lang=arabic&date=" + "0" + month + "-" + day + "-" + year, "_self"</object>';
+                    current_date_ru.innerHTML = '<object style="height:400px;" width="100%" type="text/html" data="https://wotd.transparent.com/widget/?lang=russian&date=" + "0" + month + "-" + day + "-" + year, "_self"</object>';
                 }
             else
                 {
-                    current_date_ru.innerHTML = '<object style="height:175px;" width="100%" type="text/html" data="https://wotd.transparent.com/widget/?lang=russian&date=" + month + "-" + day + "-" + year, "_self"</object>';
-                    current_date_arabic.innerHTML = '<object style="height:175px;" width="100%" type="text/html" data="https://wotd.transparent.com/widget/?lang=arabic&date=" + month + "-" + day + "-" + year, "_self"</object>';
+                    current_date_ru.innerHTML = '<object style="height:400px;" width="100%" type="text/html" data="https://wotd.transparent.com/widget/?lang=russian&date=" + month + "-" + day + "-" + year, "_self"</object>';
                 }
             </script>
      </body>
